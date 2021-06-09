@@ -31,7 +31,6 @@ def execute(Name = None, link='www.google.com'):
     app.exec_()
 
 
-execute(link="https://titul.herokuapp.com/", Name="Titul")
 
 
 
