@@ -3,7 +3,7 @@ from PyQt5.QtWebEngineWidgets import *
 from PyQt5.QtCore import *
 import sys
 
-
+# This is the main class. This version only provides back and forward button, more coming soon
 class MainWindow(QMainWindow):
     def __init__(self,link):
         super(MainWindow, self).__init__()
@@ -24,6 +24,7 @@ class MainWindow(QMainWindow):
         f_btn.triggered.connect(self.browser.forward)
         navbar.addAction(f_btn)
 
+# use this function to execute 
 def execute(Name = None, link='www.google.com'):
     app = QApplication(sys.argv)
     QApplication.setApplicationName(Name)
